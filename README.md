@@ -15,8 +15,8 @@
 ## 二、页面监控部署  
 引入文件`html2canvas.js`和`monitor.fetch.min.js`，公共文件添加对它们的引用，支持自定义事件和截图  
 说明：  
-`monitor.fetch.min.js`：记录前端行为  
-`html2canvas.js`：截图功能，如果没用到截图，可以不用添加  
+[monitor.fetch.min.js](Monitor/libs/monitor.fetch.min.js)：记录前端行为   
+[html2canvas.js](Monitor/resource/html2canvas.js)：截图功能，如果没用到截图，可以不用添加   
 
 
 * 应用  
