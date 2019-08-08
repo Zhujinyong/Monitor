@@ -1,0 +1,2611 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Centa.Monitor.ViewModel</name>
+    </assembly>
+    <members>
+        <member name="T:Centa.Monitor.ViewModel.Request.Account.LoginRequestViewModel">
+            <summary>
+            登陆获取token
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.LoginRequestViewModel.Account">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.LoginRequestViewModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.LoginRequestViewModel.RoleType">
+            <summary>
+            角色类型,10中台人员角色，20小微企业角色，30小微代理公司角色
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Account.User.RequestViewModel">
+            <summary>
+            用户列表请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.RequestViewModel.UserName">
+            <summary>
+            @Order=5,用户姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.RequestViewModel.UserRoleKeyId">
+            <summary>
+            @Order=6,用户角色
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.RequestViewModel.OwnerSubCompanyKeyId">
+            <summary>
+            @Order=7,所属分公司
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserDeleteRequestViewModel.KeyId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Account.User.UserKeyIDRequestViewModel">
+            <summary>
+            根据用户ID查询用户信息请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserKeyIDRequestViewModel.KeyId">
+            <summary>
+            @Order=3,主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserNameRequestViewModel.Account">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel">
+            <summary>
+            修改用户请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel.KeyId">
+            <summary>
+            主键ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel.UserRoleKeyId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel.UserType">
+            <summary>
+            1：域账号 2：系统账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel.OwnerSubCompanyKeyId">
+            <summary>
+            所属公司ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel.IsAdministrator">
+            <summary>
+            是否是管理员
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel">
+            <summary>
+            保存用户请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.UserRoleKeyId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.UserType">
+            <summary>
+            类型 1：域账号 2：系统账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.OwnerSubCompanyKeyId">
+            <summary>
+            所属公司ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel.IsAdministrator">
+            <summary>
+            是否是管理员
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.BalanceRequestViewModel">
+            <summary>
+            结转请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.BalanceRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.ClosingDetailRequestViewModel">
+            <summary>
+            期末结转明细列表查询请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.ClosingDetailRequestViewModel.KeyId">
+            <summary>
+            @Order=5，批次keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.ClosingDetailRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=6，员工编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.ClosingDetailRequestViewModel.EmployeeName">
+            <summary>
+            @Order=7,员工姓名
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.RequestViewModel">
+            <summary>
+            期末结转列表查询请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.UnBalanceRequestViewModel">
+            <summary>
+            反结转请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.FinalForward.UnBalanceRequestViewModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel">
+            <summary>
+            企业结算列表Dto
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.IsClosed">
+            <summary>
+            是否结转
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.EmployeeNo">
+            <summary>
+            职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.IdCard">
+            <summary>
+            身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.PaymentCompanyName">
+            <summary>
+            支付公司
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.MicroEnterpriseName">
+            <summary>
+            小微名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.CurrentMonthPL">
+            <summary>
+            本月绩效等级扣减
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.CanAssignedMoney">
+            <summary>
+            本月可分配金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.CurrentMonthInvoice">
+            <summary>
+            本月可开票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.BatchNo">
+            <summary>
+            批次号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.AssignMoney">
+            <summary>
+            分配金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.PLAssignment">
+            <summary>
+            绩效等级扣减分配
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.PaymentDate">
+            <summary>
+            支付日期
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.NoInvoiceMoney">
+            <summary>
+            未开票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.IsLocked">
+            <summary>
+            是否冻结,1冻结 0未冻结
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.InvoiceDate">
+            <summary>
+            开票日期
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.ProfessionalInvoice">
+            <summary>
+            专票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.ProfessionalVAT">
+            <summary>
+            专票增值税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.ProfessionalSurtax">
+            <summary>
+            专票附加税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.ProfessionalIncomeTax">
+            <summary>
+            专票个税所得税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.ProfessionalAuditedMoney">
+            <summary>
+            专票核销金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.GeneralInvoice">
+            <summary>
+            普票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.GeneralVAT">
+            <summary>
+            普票增值税金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.GeneralSurtax">
+            <summary>
+            普票附加税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.GeneralIncomeTax">
+            <summary>
+            普票个税所得税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalanceListViewModel.GeneralAuditedMoney">
+            <summary>
+            普票核销金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel">
+            <summary>
+            企业结算列表查询请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel.IdCard">
+            <summary>
+            @Order=7,身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel.BatchNo">
+            <summary>
+            @Order=8,年月
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.ExportRequestViewModel">
+            <summary>
+            企业结算列表导出请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=2,批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.ExportRequestViewModel.IdCard">
+            <summary>
+            @Order=7,身份证号码
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.SaveEnterpriseBalanceRequestViewModel">
+            <summary>
+            保存结算请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.SaveEnterpriseBalanceRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.SaveEnterpriseBalanceRequestViewModel.ProfessionalAuditedMoney">
+            <summary>
+            专票核销金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.SaveEnterpriseBalanceRequestViewModel.GeneralAuditedMoney">
+            <summary>
+            普票核销金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.SaveEnterpriseBalanceRequestViewModel.PaymentDate">
+            <summary>
+            支付日期
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.CurrentAccruedChargesRequestViewModel">
+            <summary>
+            计提调整请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.CurrentAccruedChargesRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.CurrentAccruedChargesRequestViewModel.CurrentAccruedCharges">
+            <summary>
+            计提金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.DeleteAssignmentRequestViewModel">
+            <summary>
+            清除分配请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.DeleteAssignmentRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.AssignmentRequestViewModel">
+            <summary>
+            分配列表请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.AssignmentRequestViewModel.KeyId">
+            <summary>
+            @Order=3,主键
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel">
+            <summary>
+            个人结算列表导出请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=2,批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel.IdCard">
+            <summary>
+            @Order=7,身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel.Status">
+            <summary>
+            @Order=8,分配状态,1分配完成，0未分配，默认未空
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel.EnterpriseOperator">
+            <summary>
+            @Order=9,公司数量比较运算符，1小于，2等于，3大于
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel.EnterpriseAmount">
+            <summary>
+            @Order=9,公司数量
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.FinanceAdditionMinusRequestViewModel">
+            <summary>
+            财务加减项调整请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.FinanceAdditionMinusRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.FinanceAdditionMinusRequestViewModel.FinanceAdditionAdjust1">
+            <summary>
+            加项调整金额(财务)1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.FinanceAdditionMinusRequestViewModel.FinanceAdditionAdjust2">
+            <summary>
+            加项调整金额(财务)2
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.FinanceAdditionMinusRequestViewModel.FinanceMinusAdjust1">
+            <summary>
+            扣款调整金额(财务)1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.FinanceAdditionMinusRequestViewModel.FinanceMinusAdjust2">
+            <summary>
+            扣款调整金额(财务)2
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.HumanAdditionMinusRequestViewModel">
+            <summary>
+            人事加减项调整请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.HumanAdditionMinusRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.HumanAdditionMinusRequestViewModel.HumanAdditionAdjust">
+            <summary>
+            人事加项调整
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.HumanAdditionMinusRequestViewModel.HumanMinusAdjust">
+            <summary>
+            人事减项调整
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.JttzRequestViewModel">
+            <summary>
+            计提调整请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.JttzRequestViewModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.JttzRequestViewModel.Jtje">
+            <summary>
+            计提金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.JxkktzRequestViewModel">
+            <summary>
+            加项扣款调整请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.JxkktzRequestViewModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.JxkktzRequestViewModel.Jxtzje">
+            <summary>
+            加项调整金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.JxkktzRequestViewModel.Kktzje">
+            <summary>
+            扣款调整金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.OnClickAssignmentRequestViewModel">
+            <summary>
+            一键分配请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.OnClickAssignmentRequestViewModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel">
+            <summary>
+            个人结算列表查询请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.BatchNo">
+            <summary>
+            @Order=2,批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.IdCard">
+            <summary>
+            @Order=7,身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.Status">
+            <summary>
+            @Order=8,分配状态,1分配完成，0未分配，默认未空
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.EnterpriseOperator">
+            <summary>
+            @Order=9,公司数量比较运算符，1小于，2等于，3大于
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel.EnterpriseAmount">
+            <summary>
+            @Order=10,公司数量
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel">
+            <summary>
+            保存分配请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel.PersonalBalanceKeyId">
+            <summary>
+            个人结算KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel.EmployeeKeyId">
+            <summary>
+            员工KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel.AssignMoney">
+            <summary>
+            分配金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel.PaymentCompanyKeyId">
+            <summary>
+            支付公司KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel.MicroEnterpriseKeyId">
+            <summary>
+            小微KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.BasePagedRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.BasePagedRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Dictionary.Company.RequestCompanyViewModel.CompanyNo">
+            <summary>
+            公司no
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.ImportAgency.HistoryAgencyRequestViewModel.BatchNo">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.ImportAgency.HistoryAgencyRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.ImportAgency.HistoryAgencyRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.ImportAgency.HistoryAgencyRequestViewModel.CreateUserName">
+            <summary>
+            @Order=5,创建人名字
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.ImportAgency.RequestModel.Url">
+            <summary>
+            EXCEL的url地址
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.ImportAgency.RequestModel.BatchNo">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.ImportAgency.RequestModel.CompanyKeyId">
+            <summary>
+            公司id
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.HistoryRequestViewModel.BatchNo">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.HistoryRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.HistoryRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.HistoryRequestViewModel.CreateUserName">
+            <summary>
+            @Order=5,创建人名字
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.HistoryRequestViewModel.ImportType">
+            <summary>
+            @Order=5,导入模板类型
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.RequestDownloadViewModel.Url">
+            <summary>
+            EXCEL的url地址
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.RequestDownloadViewModel.ImportType">
+            <summary>
+            EXCEL的模板类型
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.RequestViewModel.Url">
+            <summary>
+            EXCEL的url地址
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Import.RequestViewModel.BatchNo">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.KeyIdRequestViewModel">
+            <summary>
+            KeyId请求dto
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.KeyIdRequestViewModel.KeyId">
+            <summary>
+            keyid
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.ExportRequestViewModel">
+            <summary>
+            期末结转列表导出请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.ExportRequestViewModel.IDCard">
+            <summary>
+            @Order=7,身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=8,批次-年月
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel">
+            <summary>
+            期末结转列表查询请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel.employeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel.employeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel.IDCard">
+            <summary>
+            @Order=7,身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel.BatchNo">
+            <summary>
+            @Order=7,批次-年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=1,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=2,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=3,批次-年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.RequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.RequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.RequestViewModel.BatchNo">
+            <summary>
+            @Order=7,批次-年月
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.ExportRequestViewModel">
+            <summary>
+            其他扣款列表导出请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=1,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=2,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=3,批次-年月
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.RequestViewModel">
+            <summary>
+            其他扣款列表查询请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.RequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.RequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.RequestViewModel.BatchNo">
+            <summary>
+            @Order=7,年
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=1,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=2,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=3,批次-年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.RequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.RequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.RequestViewModel.BatchNo">
+            <summary>
+            @Order=7,批次-年月
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.ExportRequestViewModel">
+            <summary>
+            转小微企业前结余导出请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=1,职员编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=2,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=3,批次-年月
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.RequestViewModel">
+            <summary>
+            转小微企业前结余查询请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.RequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.RequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.RequestViewModel.BatchNo">
+            <summary>
+            @Order=7,批次-年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.ExportRequestViewModel.EmployeeNo">
+            <summary>
+            @Order=1,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.ExportRequestViewModel.EmployeeName">
+            <summary>
+            @Order=2,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.ExportRequestViewModel.BatchNo">
+            <summary>
+            @Order=3,批次-年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.RequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.RequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.RequestViewModel.EmployeeNo">
+            <summary>
+            @Order=5,职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.RequestViewModel.EmployeeName">
+            <summary>
+            @Order=6,职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.RequestViewModel.BatchNo">
+            <summary>
+            @Order=7,批次-年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel.UserName">
+            <summary>
+            @Order=5,员工编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel.LogType">
+            <summary>
+            @Order=6,日志类型
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel.StartTimeFrom">
+            <summary>
+            @Order=7,时间起始值
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel.EndTimeTo">
+            <summary>
+            @Order=8,时间结束值
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.ParamItemViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.ParamItemViewModel.ParameterItemName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Permission.PermissionDataListModel.RoleKeyId">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Permission.PermissionDataListModel.list">
+            <summary>
+            权限编码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Permission.PermissionDataModle.PermisstionCode">
+            <summary>
+            权限编码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Permission.PermissionDataModle.PermissionKeyId">
+            <summary>
+            权限id
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Permission.PermissionDataModle.IsChecked">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleAddViewModel.KeyId">
+            <summary>
+            角色id 
+            </summary>        
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleAddViewModel.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Centa.Monitor.ViewModel.Request.System.Role.RoleAddViewModel.RoleType" -->
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleAddViewModel.CreateUserKeyId">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleMenuDataModel.KeyId">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleMenuDataModel.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleMenuDataModel.RoleType">
+            <summary>
+            角色类型10-中台人员角色,20-小微企业角色,30-小微代理公司角色
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleMenuModel.RoleParentName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleMenuModel.RoleType">
+            <summary>
+            角色类型
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleModel.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleModel.RoleType">
+            <summary>
+            角色类别
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleRequestViewModel.KeyId">
+            <summary>
+            @Order=3,主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.CreateUserKeyId">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.UpdateUserKeyId">
+            <summary>
+            修改人id
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.RoleDescription">
+            <summary>
+            角色描述
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.RoleType">
+            <summary>
+            角色类别
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Role.RoleUseViewModel.IsDeleted">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Account.AccountResponseViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.AccountResponseViewModel.UserName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.AccountResponseViewModel.Picture">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.AccountResponseViewModel.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.AccountResponseViewModel.IsAdministrator">
+            <summary>
+            是否超级管理员 1是0否
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.AccountResponseViewModel.PromissionList">
+            <summary>
+            角色权限
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.AccountResponseViewModel.MenuPromissionList">
+            <summary>
+            菜单列表权限
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Account.User.ResetPasswordsResponseViewModel">
+            <summary>
+            重置密码请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.ResetPasswordsResponseViewModel.KeyId">
+            <summary>
+            keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.ResetPasswordsResponseViewModel.Password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel">
+            <summary>
+            根据用户ID查询用户信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.KeyId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.UserName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.UserType">
+            <summary>
+            域账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.UserRoleKeyId">
+            <summary>
+            所属角色keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.OwnerSubCompanyKeyId">
+            <summary>
+            所属公司keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.IsAdministrator">
+            <summary>
+            是否是超级管理员 0：否 1：是
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.Status">
+            <summary>
+            状态是否启用 0：否 1：是
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.Password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserKeyIdResponseViewModel.Version1">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel">
+            <summary>
+            用户列表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.KeyId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.UserName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.Version1">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.RoleName">
+            <summary>
+            所属角色
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.UserRoleKeyId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.OwnerSubCompanyKeyId">
+            <summary>
+            公司ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.SubCompanyName">
+            <summary>
+            所属分公司
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserListResponseViewModel.Status">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Account.User.UsersDeleteResponseViewModel">
+            <summary>
+            修改是否删除返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UsersDeleteResponseViewModel.KeyId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UsersDeleteResponseViewModel.IsDeleted">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.KeyId">
+            <summary>
+            主键ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.CreateUserKeyId">
+            <summary>
+            新增员工ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.CreateTime">
+            <summary>
+            新增时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.UpdateUserKeyId">
+            <summary>
+            修改人ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.Version1">
+            <summary>
+            每修改一次+1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.UserRoleKeyId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.UserType">
+            <summary>
+            1：域账号 2：系统账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.OwnerSubCompanyKeyId">
+            <summary>
+            所属公司ID 
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.IsAdministrator">
+            <summary>
+            是否是超级管理员
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.Status">
+            <summary>
+            状态是否启用
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Account.User.UserUptResponseViewModel.IsDeleted">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.Closing.ClosingResponseViewModel">
+            <summary>
+            期末结转列表Model
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.Closing.ClosingResponseViewModel.KeyId">
+            <summary>
+            主键KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.Closing.ClosingResponseViewModel.BatchNo">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.Closing.ClosingResponseViewModel.EmployeeCount">
+            <summary>
+            结转人数
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.Closing.ClosingResponseViewModel.BatchCloseTime">
+            <summary>
+            结转时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.Closing.ClosingResponseViewModel.BatchCloseUserName">
+            <summary>
+            结转人
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel">
+            <summary>
+            期末结转明细列表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel.KeyId">
+            <summary>
+            主键KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel.EmployeeNo">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel.EmployeeName">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel.TotalYear">
+            <summary>
+            年度累计导入金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel.NoDeductionPL">
+            <summary>
+            未扣绩效等级扣减
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel.Surplus">
+            <summary>
+            转小微前剩余结余
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ClosingDetailPagedResponseViewModel.NoInvoiceMoney">
+            <summary>
+            未开票金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ColosingPagedResponseViewModel">
+            <summary>
+            期末结转列表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ColosingPagedResponseViewModel.KeyId">
+            <summary>
+            主键KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ColosingPagedResponseViewModel.BatchNo">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ColosingPagedResponseViewModel.EmployeeCount">
+            <summary>
+            结转人数
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ColosingPagedResponseViewModel.BatchCloseTime">
+            <summary>
+            结转时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.FinalForward.ColosingPagedResponseViewModel.BatchCloseUserName">
+            <summary>
+            结转人
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel">
+            <summary>
+            个人结算-企业分配返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.EmployeeName">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.PLSName">
+            <summary>
+            本月绩效等级扣减
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.PaymentCompanyKeyId">
+            <summary>
+            支付公司KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.PaymentCompanyName">
+            <summary>
+            支付公司
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.MicroEnterpriseKeyId">
+            <summary>
+            小微KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.MicroEnterpriseName">
+            <summary>
+            小微名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.InvoiceLimint">
+            <summary>
+            可开发票上限值
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.UsedAmount">
+            <summary>
+            已用额度
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.RemainingAmount">
+            <summary>
+            剩余额度（上限）
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.AssignMoney">
+            <summary>
+            分配金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.PLAssignment">
+            <summary>
+            绩效等级扣减分配
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.CurrentMonthInvoice">
+            <summary>
+            本月可开票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseOfPersonalResponseViewModel.LastMonthNoInvoiceMoney">
+            <summary>
+            上月未开票金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel">
+            <summary>
+            企业结算列表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.YearMonth">
+            <summary>
+            年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.EmployeeNo">
+            <summary>
+            职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.IdCard">
+            <summary>
+            身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Batch">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Khkjfa">
+            <summary>
+            考核扣减方案
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Fpje">
+            <summary>
+            分配金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Zpje">
+            <summary>
+            专票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.ZpTime">
+            <summary>
+            专票时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Ppje">
+            <summary>
+            普票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.PpTime">
+            <summary>
+            普票时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Dyjyjt">
+            <summary>
+            当月结余计提
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Zzs">
+            <summary>
+            增值税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Gssds">
+            <summary>
+            个税所得税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Kfczjl">
+            <summary>
+            可返财政奖励
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Yfczjl">
+            <summary>
+            已返财政奖励
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Hxje">
+            <summary>
+            核销金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.EnterpriseResponseViewModel.Wkpje">
+            <summary>
+            未开票金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.SaveEnterpriseBalanceResponseViewModel">
+            <summary>
+            保存企业结算响应Dto
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.SaveEnterpriseBalanceResponseViewModel.KeyId">
+            <summary>
+            KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.SaveEnterpriseBalanceResponseViewModel.PaymentDate">
+            <summary>
+            支付日期
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.SaveEnterpriseBalanceResponseViewModel.ProfessionalAuditedMoney">
+            <summary>
+            专票核销金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.SaveEnterpriseBalanceResponseViewModel.GeneralAuditedMoney">
+            <summary>
+            普票核销金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.EnterpriseBalance.SaveEnterpriseBalanceResponseViewModel.NoInvoiceMoney">
+            <summary>
+            未开票金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel">
+            <summary>
+            分配列表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.EndYearMonth">
+            <summary>
+            结束年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.EnterpriseName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Khkjfa">
+            <summary>
+            考核扣减方案
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Fpje">
+            <summary>
+            分配金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Zpje">
+            <summary>
+            专票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Ppje">
+            <summary>
+            普票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Zzs">
+            <summary>
+            增值税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Fjs">
+            <summary>
+            附加税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Gssds">
+            <summary>
+            个税所得税
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Kfczjl">
+            <summary>
+            可返财政奖励
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Yfczjl">
+            <summary>
+            已返财政奖励
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Hxje">
+            <summary>
+            核销金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.AssignmentResponseViewModel.Wkpje">
+            <summary>
+            未开票金额
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel">
+            <summary>
+            个人结算列表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.BatchNo">
+            <summary>
+            年月，批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.IsClosed">
+            <summary>
+            是否结转
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.EmployeeKeyId">
+            <summary>
+            员工KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.EmployeeNo">
+            <summary>
+            职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.IdCard">
+            <summary>
+            身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.LastYearCarryOver">
+            <summary>
+            上年结转
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.TotalSurplus">
+            <summary>
+            转小微前总结余
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.Surplus">
+            <summary>
+            转小微前剩余结余
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.CurrentAccruedCharges">
+            <summary>
+            当月结余计提
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.BasicCooperationFee">
+            <summary>
+            基础合作费
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.ResultCooperationFee">
+            <summary>
+            成果合作费
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.HumanAddition">
+            <summary>
+            人事加项
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceAddition1">
+            <summary>
+            财务加项1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceAddition2">
+            <summary>
+            财务加项2
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.TotalAddition">
+            <summary>
+            加项合计
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.HumanMinus">
+            <summary>
+            人事减项
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceMinus1">
+            <summary>
+            财务减项1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceMinus2">
+            <summary>
+            财务减项2
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.TotalMinus">
+            <summary>
+            减项合计
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.HumanAdditionAdjust">
+            <summary>
+            加项调整金额(人事)
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.HumanMinusAdjust">
+            <summary>
+            扣款调整金额(人事)
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceAdditionAdjust1">
+            <summary>
+            加项调整金额(财务)1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceAdditionAdjust2">
+            <summary>
+            加项调整金额(财务)2
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceMinusAdjust1">
+            <summary>
+            扣款调整金额(财务)1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.FinanceMinusAdjust2">
+            <summary>
+            扣款调整金额(财务)2
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.TotalYear">
+            <summary>
+            年度累计金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.CurrentMonthAccrued">
+            <summary>
+            本月实得
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.PLSName">
+            <summary>
+            绩效等级扣减方案-Performance Level Solution
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.PLD">
+            <summary>
+            绩效等级扣减比例-Performance Level Discount
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.CurrentMonthPL">
+            <summary>
+            本月绩效等级扣减
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.NoDeductionPL">
+            <summary>
+            未扣绩效等级扣减
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.CanAssignedMoney">
+            <summary>
+            本月可分配金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.Islocked">
+            <summary>
+            是否冻结
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.Status">
+            <summary>
+            分配状态
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Assignment.PersonalBalance.PersonalBalanceResponseViewModel.EnterpriseAmount">
+            <summary>
+            公司数量
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.DataResponseViewModel">
+            <summary>
+            单个数据的返回格式
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.DataResponseViewModel.Data">
+            <summary>
+            单个数据
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Dictionary.SubCompanyResponseViewModel.KeyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Dictionary.SubCompanyResponseViewModel.SubCompanyName">
+            <summary>
+            分公司名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Import.ImportErrorDataModel.LineNo">
+            <summary>
+            EXCEL行号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Import.ImportErrorDataModel.errorMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.PageResponseViewModel">
+            <summary>
+            有数据的返回格式
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageResponseViewModel.Page">
+            <summary>
+            分页
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.PageViewModel">
+            <summary>
+            分页
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageViewModel.PageSize">
+            <summary>
+            每页多少条数据
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageViewModel.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageViewModel.Total">
+            <summary>
+            总共多少条数据
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel">
+            <summary>
+            期末结转报表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.SubCompanyKeyId">
+            <summary>
+            分公司KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.YearMonth">
+            <summary>
+            年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.EmployeeNo">
+            <summary>
+            职员编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.BatchNo">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.IDCard">
+            <summary>
+            身份证号码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.TotalYear">
+            <summary>
+            年度累计导入金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.NoDeductionPL">
+             <summary>
+            未扣绩效等级扣减
+             </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.Surplus">
+            <summary>
+            转小微前剩余结余
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.NoInvoiceMoney">
+            <summary>
+            未开票金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinallyForward.FinalForwardResponseViewModel.MicroEnterpriseName">
+            <summary>
+            小微企业公司名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.SubCompanyKeyId">
+            <summary>
+            分公司keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.BatchNo">
+            <summary>
+            年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.EmployeeNo">
+            <summary>
+            职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.HumanAddition">
+            <summary>
+            人事加项
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.FinanceAddition1">
+            <summary>
+            财务加项1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.FinanceAddition2">
+            <summary>
+            财务加项2
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.TotalAddition">
+            <summary>
+            其他加项合计
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.Remark">
+            <summary>
+            人事加项备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceOtherAdditionFee.FinanceOtherAdditionFeeResponseViewModel.FinanceRemark">
+            <summary>
+            财务加项备注
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel">
+            <summary>
+            其他扣款报表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.SubCompanyKeyId">
+            <summary>
+            分公司KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.BatchNo">
+            <summary>
+            年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.EmployeeNo">
+            <summary>
+            职员编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.HumanMinus">
+            <summary>
+            人事减项
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.FinanceMinus1">
+            <summary>
+            财务减项1
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.FinanceMinus2">
+            <summary>
+            财务减项2
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.TotalMinus">
+            <summary>
+            减项合计
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.OtherDeductions.FinanceOtherMinusResponseViewModel.FinanceRemark">
+            <summary>
+            财务减项备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.SubCompanyKeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.BatchNo">
+            <summary>
+            年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.EmployeeNo">
+            <summary>
+            职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.Commission">
+            <summary>
+            佣金
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.Performance">
+            <summary>
+            绩效奖金
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.OtherCommissionAddition">
+            <summary>
+            其他佣金加项
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.ResultCooperationFee">
+            <summary>
+            成果合作费
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.FinanceResultCooperationFee.FinanceResultCooperationFeeResponseViewModel.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.Reports.MonitorFrontSurplus.FinanceSurplusResponsViewModel">
+            <summary>
+            转小微企业前结余返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.MonitorFrontSurplus.FinanceSurplusResponsViewModel.SubCompanyKeyId">
+            <summary>
+            分公司KeyId
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.MonitorFrontSurplus.FinanceSurplusResponsViewModel.BatchNo">
+            <summary>
+            年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.MonitorFrontSurplus.FinanceSurplusResponsViewModel.EmployeeNo">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.MonitorFrontSurplus.FinanceSurplusResponsViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.MonitorFrontSurplus.FinanceSurplusResponsViewModel.Surplus">
+            <summary>
+            结余金额
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.MonitorFrontSurplus.FinanceSurplusResponsViewModel.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.SubCompanyKeyId">
+            <summary>
+            分公司keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.BatchNo">
+            <summary>
+            年月
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.EmployeeNo">
+            <summary>
+            职员代码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.EmployeeName">
+            <summary>
+            职员姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.Salary">
+            <summary>
+            底薪
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.SocialInsurance">
+            <summary>
+            社保
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.HousingFund">
+            <summary>
+            公积金
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.Bonus">
+            <summary>
+            奖金
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.OtherSalaryAddition">
+            <summary>
+            其他底薪加项
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.BasicCooperationFee">
+            <summary>
+            基础合作费
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.Reports.HumanBasicCooperationFee.HumanBasicCooperationFeeResponseViewModel.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.ResponseViewModel">
+            <summary>
+            接口返回格式（不带数据的）
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.ViewModel.Response.ResponseViewModel.#ctor(Centa.Monitor.Infrastructure.Enum.StatusCodeEnum,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="status"></param>
+            <param name="message"></param>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.ResponseViewModel.Status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.ResponseViewModel.Message">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.ResponseViewModel.Performance">
+            <summary>
+            性能
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Log.LogPagedResponseViewModel.KeyId">
+            <summary>
+            主键keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Log.LogPagedResponseViewModel.JsonContent">
+            <summary>
+            json内容
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Log.LogPagedResponseViewModel.Description">
+            <summary>
+            日志描述
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Log.LogPagedResponseViewModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Log.LogPagedResponseViewModel.CreateUserName">
+            <summary>
+            创建人keyid
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Log.LogPagedResponseViewModel.IPAddress">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Log.LogPagedResponseViewModel.LogTypeName">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionDataViewModel.FunctionModuleCode">
+            <summary>
+            左导编码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionDataViewModel.FunctionModuleName">
+            <summary>
+            左导名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionDataViewModel.Route">
+            <summary>
+            左导URL
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionDataViewModel.Path">
+            <summary>
+            二级单个url
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionViewModel.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionViewModel.FunctionCategoryCode">
+            <summary>
+            主导编码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionViewModel.FunctionCategoryName">
+            <summary>
+            主导名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionViewModel.Route">
+            <summary>
+            主导URL
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.MenuPermissionViewModel.FunctionModel">
+            <summary>
+            左导列表
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.PermissionDataViewModel.PermisstionCode">
+            <summary>
+            权限编码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.PermissionDataViewModel.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.ViewModel.Response.System.Permission.PromissionResponseViewModel.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.PromissionResponseViewModel.MenuPromissionList">
+            <summary>
+            菜单列表权限
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Permission.PromissionResponseViewModel.PromissionList">
+            <summary>
+            角色权限列表
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Role.RoleResponseViewModel.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Role.RoleResponseViewModel.UseCount">
+            <summary>
+            角色使用人数
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Role.RoleResponseViewModel.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Role.RoleResponseViewModel.UpdateUser">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.TokenResponseViewModel">
+            <summary>
+            token
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.TokenResponseViewModel.Token">
+            <summary>
+            token
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.TokenResponseViewModel.ExpireIn">
+            <summary>
+            有效期，单位秒
+            </summary>
+        </member>
+    </members>
+</doc>

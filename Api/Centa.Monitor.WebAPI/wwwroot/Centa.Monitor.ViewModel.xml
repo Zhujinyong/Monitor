@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Centa.Monitor.ViewModel</name>
+    </assembly>
+    <members>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.BahaviorRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.BahaviorRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.BahaviorRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.BahaviorRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.BahaviorRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.BahaviorRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.CustomerPVRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.CustomerPVRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.CustomerPVRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.CustomerPVRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.CustomerPVRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.CustomerPVRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ExtendBehaviorRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ExtendBehaviorRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ExtendBehaviorRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ExtendBehaviorRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ExtendBehaviorRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ExtendBehaviorRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.HttpLogRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.HttpLogRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.HttpLogRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.HttpLogRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.HttpLogRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.HttpLogRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.JavascriptErrorRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.JavascriptErrorRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.JavascriptErrorRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.JavascriptErrorRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.JavascriptErrorRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.JavascriptErrorRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.LoadPageRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.LoadPageRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.LoadPageRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.LoadPageRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.LoadPageRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.LoadPageRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ResourceLoadRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ResourceLoadRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ResourceLoadRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ResourceLoadRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ResourceLoadRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ResourceLoadRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ScreenShotRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ScreenShotRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ScreenShotRequestViewModel.WebMonitorId">
+            <summary>
+            @Order=5,项目主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ScreenShotRequestViewModel.CustomerKey">
+            <summary>
+            @Order=6,用户主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ScreenShotRequestViewModel.StartTime">
+            <summary>
+            @Order=7,开始时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ScreenShotRequestViewModel.EndTime">
+            <summary>
+            @Order=8,结束时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.AddProjectRequestViewModel.ProjectName">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.AddProjectRequestViewModel.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.AddProjectRequestViewModel.IsUse">
+            <summary>
+            是否使用
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.DeleteProjectRequestViewModel.KeyId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ProjectRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ProjectRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.ProjectRequestViewModel.ProjectName">
+            <summary>
+            @Order=5,项目名称
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.System.Project.UpdateProjectRequestViewModel">
+            <summary>
+            修改项目请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.UpdateProjectRequestViewModel.KeyId">
+            <summary>
+            主键ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.UpdateProjectRequestViewModel.ProjectName">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.UpdateProjectRequestViewModel.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.Project.UpdateProjectRequestViewModel.IsUse">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.System.User.AddUserRequestViewModel">
+            <summary>
+            保存用户请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.AddUserRequestViewModel.DomainAccount">
+            <summary>
+            域账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.AddUserRequestViewModel.RealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.AddUserRequestViewModel.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.AddUserRequestViewModel.IsUse">
+            <summary>
+            是否使用
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.DeleteUserRequestViewModel.KeyId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.System.User.LoginRequestViewModel">
+            <summary>
+            登陆获取token
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.LoginRequestViewModel.Account">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.LoginRequestViewModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.System.User.UserRequestViewModel">
+            <summary>
+            用户列表请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UserRequestViewModel.PageIndex">
+            <summary>
+            @Order=3,页码，默认值1，如果传值-1，会返回所有记录
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UserRequestViewModel.PageSize">
+            <summary>
+            @Order=4,每页多少条记录，默认10
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UserRequestViewModel.DomainAccount">
+            <summary>
+            @Order=5,域账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UserRequestViewModel.RealName">
+            <summary>
+            @Order=6,姓名
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Request.System.User.UpdateUserRequestViewModel">
+            <summary>
+            修改用户请求实体
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UpdateUserRequestViewModel.KeyId">
+            <summary>
+            主键ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UpdateUserRequestViewModel.DomainAccount">
+            <summary>
+            域账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UpdateUserRequestViewModel.RealName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UpdateUserRequestViewModel.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Request.System.User.UpdateUserRequestViewModel.IsUse">
+            <summary>
+            是否使用
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.DataResponseViewModel">
+            <summary>
+            单个数据的返回格式
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.DataResponseViewModel.Data">
+            <summary>
+            单个数据
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.PageResponseViewModel">
+            <summary>
+            有数据的返回格式
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageResponseViewModel.Page">
+            <summary>
+            分页
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.PageViewModel">
+            <summary>
+            分页
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageViewModel.PageSize">
+            <summary>
+            每页多少条数据
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageViewModel.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.PageViewModel.Total">
+            <summary>
+            总共多少条数据
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.ResponseViewModel">
+            <summary>
+            接口返回格式（不带数据的）
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.ViewModel.Response.ResponseViewModel.#ctor(Centa.Monitor.Infrastructure.Enum.StatusCodeEnum,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="status"></param>
+            <param name="message"></param>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.ResponseViewModel.Status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.ResponseViewModel.Message">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.ResponseViewModel.Performance">
+            <summary>
+            性能
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Project.ProjectListResponseViewModel.KeyId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Project.ProjectListResponseViewModel.ProjectName">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Project.ProjectListResponseViewModel.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Project.ProjectListResponseViewModel.IsUse">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Project.ProjectListResponseViewModel.CreatedAt">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.Project.ProjectListResponseViewModel.UpdatedAt">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel">
+            <summary>
+            用户列表返回信息
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.KeyId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.UserName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.Version1">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.RoleName">
+            <summary>
+            所属角色
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.UserRoleKeyId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.OwnerSubCompanyKeyId">
+            <summary>
+            公司ID
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.SubCompanyName">
+            <summary>
+            所属分公司
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.System.User.UserListResponseViewModel.Status">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.ViewModel.Response.TokenResponseViewModel">
+            <summary>
+            token
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.TokenResponseViewModel.Token">
+            <summary>
+            token
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.ViewModel.Response.TokenResponseViewModel.ExpireIn">
+            <summary>
+            有效期，单位秒
+            </summary>
+        </member>
+    </members>
+</doc>

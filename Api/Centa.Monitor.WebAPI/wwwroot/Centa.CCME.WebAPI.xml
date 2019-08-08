@@ -1,0 +1,803 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Centa.Monitor.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:Centa.Monitor.WebApi.Controllers.AssignmentManagement.ClosingController">
+            <summary>
+            期末结转
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.ClosingController.#ctor(Centa.Monitor.ApplicationService.Interface.IClosingService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="closingService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.ClosingController.GetClosingPaged(Centa.Monitor.ViewModel.Request.EmptyPagedRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            期末结转列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.ClosingController.GetClosingDetailPaged(Centa.Monitor.ViewModel.Request.Assignment.FinalForward.ClosingDetailRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            期末结转明细列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.ClosingController.ExcuteClosing(Centa.Monitor.ViewModel.Request.KeyIdRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            结转
+            </summary>
+            <param name="query">@Order=3,结转请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController">
+            <summary>
+            企业结算
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController.#ctor(Centa.Monitor.ApplicationService.Interface.IEnterpriseBalanceService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="enterpriseBalanceService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController.GetEnterpriseBalances(Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.EnterpriseBalancePagedRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            企业结算列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController.ExportList(Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            企业结算列表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController.BatchSaveEnterpriseBalance(System.Collections.Generic.List{Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.SaveEnterpriseBalanceRequestViewModel},Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            批量核销企业结算
+            </summary>
+            <param name="query">@Order=3,保存请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController.SaveEnterpriseBalance(Centa.Monitor.ViewModel.Request.Assignment.EnterpriseBalance.SaveEnterpriseBalanceRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            核销企业结算
+            </summary>
+            <param name="query">@Order=3,保存请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController.LcokEnterpriseBalance(Centa.Monitor.ViewModel.Request.KeyIdRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            冻结企业结算
+            </summary>
+            <param name="req"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.EnterpriseBalanceController.UnLockEnterpriseBalance(Centa.Monitor.ViewModel.Request.KeyIdRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            解冻企业结算
+            </summary>
+            <param name="req"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController">
+            <summary>
+            个人结算
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.#ctor(Centa.Monitor.ApplicationService.Interface.IPersonalBalanceService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="personalBalanceService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.GetPersonalBalanceList(Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            个人结算列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.ExportPersonalBalanceList(Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            个人结算列表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.BatchAssignOne2One(Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            一键分配
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.UpdateCurrentAccruedCharges(Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.CurrentAccruedChargesRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            计提调整
+            </summary>
+            <param name="query">@Order=3,计提调整请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.UpdateHumanAdditionMinus(Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.HumanAdditionMinusRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            人事加减项调整
+            </summary>
+            <param name="query">@Order=3,人事加减项调整请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.UpdateFinanceAdditionMinus(Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.FinanceAdditionMinusRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            财务加减项调整
+            </summary>
+            <param name="query">@Order=3,财务加减项调整请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.GetAssignmentList(Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.AssignmentRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            分配列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.ChangeAssignMoney(System.Collections.Generic.List{Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel},Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            修改分配金额
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.SaveAssignment(System.Collections.Generic.List{Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.SaveAssignmentRequestViewModel},Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            保存分配
+            </summary>
+            <param name="query">@Order=3,一键分配请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.AssignmentManagement.PersonalBalanceController.DeleteAssignment(Centa.Monitor.ViewModel.Request.Assignment.PersonalBalance.DeleteAssignmentRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            清除分配
+            </summary>
+            <param name="query">@Order=3,清除分配请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Controllers.SystemManagement.AccountController">
+            <summary>
+            登录/登出
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.SystemManagement.AccountController.#ctor(Centa.Monitor.WebApi.Token.ITokenVerify,Centa.Monitor.ApplicationService.Interface.IAccountService,Centa.Monitor.ApplicationService.Interface.System.IPermissionService,Centa.Monitor.ApplicationService.Interface.System.IRoleService,Centa.Monitor.ApplicationService.Interface.Company.ISubCompanyService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="tokenService"></param>
+            <param name="accountService"></param>
+            <param name="promissionService"></param>
+            <param name="roleService"></param>
+            <param name="subCompanyService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.SystemManagement.AccountController.GetToken(Centa.Monitor.ViewModel.Request.Account.LoginRequestViewModel)">
+            <summary>
+            登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.SystemManagement.AccountController.GetUserInfomation(Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            用户信息
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Controllers.SystemManagement.AccountController.LogOut">
+            <summary>
+            退出登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Filter.Action.OperationAttribute">
+            <summary>
+            权限验证
+            </summary>
+        </member>
+        <member name="F:Centa.Monitor.WebApi.Filter.Action.OperationAttribute.OperationFilter._permisstionCode">
+            <summary>
+            权限码，绑定在Action上
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Filter.Action.SystemLogAttribute">
+            <summary>
+            日志属性，可以加在Controller和Action上
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Filter.Action.SystemLogAttribute.SystemLogActionFilterImpl.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            excute before action run 
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Filter.Action.TokenValidateAttribute">
+            <summary>
+            token验证，加上模型绑定，不需要在每个Action里写
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Filter.Exception.CustomExceptionFilterAttribute">
+            <summary>
+            异常过滤器
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.ModelBinder.TokenModel">
+            <summary>
+            token模型，注意：属性名称不要和action,controller参数相同
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.WebApi.ModelBinder.TokenModel.ValidateTo">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:Centa.Monitor.WebApi.ModelBinder.TokenModel.IPAddress">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.ModelBinder.TokenModelBinder">
+            <summary>
+            模型绑定，解析query的token
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.ModelBinder.TokenModelBinder.BindModelAsync(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext)">
+            <summary>
+            请求header里传递参数token
+            </summary>
+            <param name="bindingContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.ModelBinder.TokenModelBinderProvider">
+            <summary>
+            Provider
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Swagger.FileUploadFilter">
+            <summary>
+            文件上传
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Swagger.ParameterFilter">
+            <summary>
+            swagger请求参数设置
+            模型绑定的TokenModel参数，swagger忽略掉，用token参数取而代之
+            参数排序（如果没有继承，只需要改变propertity顺序，但是有继承，就要设置order了）
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Swagger.ParameterFilter.SetDescription(Swashbuckle.AspNetCore.Swagger.IParameter)">
+            <summary>
+            修改字段描述
+            </summary>
+            <param name="parameter"></param>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Swagger.ParameterFilter.ParameterSortComparer">
+            <summary>
+            参数排序，参数格式：Order={序号},
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Swagger.ParameterFilter.ParameterSortComparer.GetSort(Swashbuckle.AspNetCore.Swagger.IParameter)">
+            <summary>
+            从注释里获取排序
+            </summary>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Swagger.VersionInPathFilter">
+            <summary>
+            路径上自动设置版本
+            </summary>
+        </member>
+        <member name="T:Centa.Monitor.WebApi.Token.ITokenVerify">
+            <summary>
+            token的生成和解析
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Token.ITokenVerify.WriteToken(Centa.Monitor.Infrastructure.Model.System.UserModel)">
+            <summary>
+            生成token
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Token.ITokenVerify.ReadToken(System.String)">
+            <summary>
+            解析token
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Token.TokenVerify.WriteToken(Centa.Monitor.Infrastructure.Model.System.UserModel)">
+            <summary>
+            生成Token
+            </summary>
+            <param name="account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebApi.Token.TokenVerify.ReadToken(System.String)">
+            <summary>
+            解析Token
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Monitor.BatchController.GetBatchNo(Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            获取导入批次
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Monitor.BatchController.GetBatchNo(System.Guid,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            获取导入批次
+            </summary>
+            <param name="keyIdRequestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Controllers.Dictionary.DictionaryController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Dictionary.DictionaryController.#ctor(Centa.Monitor.ApplicationService.Interface.Dictionary.IPaymentCompanyService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="paymentCompanyService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Dictionary.DictionaryController.GePaymentCompanyList(Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            获取支付公司列表
+            </summary>       
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Controllers.Dictionary.SubCompanyController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Dictionary.SubCompanyController.#ctor(Centa.Monitor.ApplicationService.Interface.Company.ISubCompanyService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="subCompanyService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Dictionary.SubCompanyController.GetList(Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            获取分公司信息
+            </summary>       
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Dictionary.SubCompanyController.SetDefaultCompany(Centa.Monitor.ViewModel.Request.Dictionary.Company.RequestCompanyViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            设置默认公司
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.DownloadExcel(Centa.Monitor.ViewModel.Request.Import.RequestDownloadViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            下载excel
+            </summary>
+            <param name="requestDownloadViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.ImportExcel(Centa.Monitor.ViewModel.Request.Import.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入基础合作费
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.ImportFinanceOtherAddition(Centa.Monitor.ViewModel.Request.Import.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入财务其他加项
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.ImportFinanceOtherMinus(Centa.Monitor.ViewModel.Request.Import.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入财务其他减项
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.ImportResultCooperation(Centa.Monitor.ViewModel.Request.Import.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入成果合作费
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.FinanceSurplusImportExcel(Centa.Monitor.ViewModel.Request.Import.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入转小微前结余
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.OtherAdditionImportExcel(Centa.Monitor.ViewModel.Request.Import.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入人事其它加项
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.OtherMinusImportExcel(Centa.Monitor.ViewModel.Request.Import.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入人事其它减项
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.Import.ImportController.GetList(Centa.Monitor.ViewModel.Request.Import.HistoryRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入历史列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController">
+            <summary>
+            报表管理
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.#ctor(Centa.Monitor.ApplicationService.Interface.Reports.IFinalForwardService,Centa.Monitor.ApplicationService.Interface.Reports.IFinanceOtherAdditionFeeService,Centa.Monitor.ApplicationService.Interface.Reports.IFinanceOtherMinusService,Centa.Monitor.ApplicationService.Interface.Reports.IReportsFinanceResultCooperationFeeService,Centa.Monitor.ApplicationService.Interface.Reports.IHumanBasicCooperationFeeService,Centa.Monitor.ApplicationService.Interface.Reports.IFinanceSurplusService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="finallyForwardService"></param>
+            <param name="otherAdditionalService"></param>
+            <param name="otherDeductionsService"></param>
+            <param name="harvestCooperationService"></param>
+            <param name="basicCooperationService"></param>
+            <param name="financeSurplusService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.GetOtherDeductionsList(Centa.Monitor.ViewModel.Request.Reports.FinallyForward.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            期末结转报表列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.ExportOtherDeductionsList(Centa.Monitor.ViewModel.Request.Reports.FinallyForward.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            期末结转报表列表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.GetOtherAdditionalForwardList(Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            其他加项报表列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.ExportOtherAdditionalForwardList(Centa.Monitor.ViewModel.Request.Reports.FinanceOtherAdditionFee.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            其他加项报表列表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.GetOtherDeductionsList(Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            其他减项报表列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.ExportOtherDeductionsList(Centa.Monitor.ViewModel.Request.Reports.OtherDeductions.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            其他扣款报表列表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.GetHarvestCooperationForwardList(Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            成果合作费报表列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.ExportHarvestCooperationForwardList(Centa.Monitor.ViewModel.Request.Reports.FinanceResultCooperationFee.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            成果合作费报表列表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.GetBasicCooperationForwardList(Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            基础合作费报表列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.ExportBasicCooperationForwardList(Centa.Monitor.ViewModel.Request.Reports.HumanBasicCooperationFee.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            基础合作费报表列表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.GetOtherDeductionsList(Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            转小微企业前结余
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.ReportManagement.ReportController.ExportOtherDeductionsList(Centa.Monitor.ViewModel.Request.Reports.MonitorFrontSurplus.ExportRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            转小微企业前结余报表导出
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Controllers.SystemManagement.ParamItemController">
+            <summary>
+            导入类别
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.ParamItemController.GetList(Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入类别列表
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Controllers.SystemManagement.PermissionController">
+            <summary>
+            个人权限
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.PermissionController.#ctor(Centa.Monitor.ApplicationService.Interface.System.IPermissionService)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="promissionService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.PermissionController.SavePermission(Centa.Monitor.ViewModel.Request.System.Permission.PermissionDataListModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            保存权限
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Controllers.SystemManagement.RoleController">
+            <summary>
+            角色列表
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.RoleController.#ctor(Centa.Monitor.ApplicationService.Interface.System.IRoleService,Centa.Monitor.ApplicationService.Interface.System.IPermissionService,Centa.Monitor.WebApi.Token.ITokenVerify)">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="roleService"></param>
+            <param name="permissionService"></param>
+            <param name="tokenService"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.RoleController.GetRoleManageList(Centa.Monitor.ViewModel.Request.System.Role.RoleRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            获取角色列表
+            </summary>       
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.RoleController.GetRoleMenuList(Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            获取角色左导
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.RoleController.AddRole(Centa.Monitor.ViewModel.Request.System.Role.RoleAddViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            新增角色
+            </summary>
+            <param name="model"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.RoleController.UpdateRole(Centa.Monitor.ViewModel.Request.System.Role.RoleModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            修改角色
+            </summary>
+            <param name="model"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.RoleController.DeleteRole(Centa.Monitor.ViewModel.Request.System.Role.RoleRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            删除角色
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.#ctor(Centa.Monitor.ApplicationService.Interface.System.IUserService,Centa.Monitor.Infrastructure.Interfaces.IRepository{Centa.Monitor.Infrastructure.Model.System.UserModel})">
+            <summary>
+            IOC注入
+            </summary>
+            <param name="userService"></param>
+            <param name="accountModelRepository"></param>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.SaveUser(Centa.Monitor.ViewModel.Request.Account.SaveUserRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            新增用户
+            </summary>
+            <param name="query">@Order=3,新增用户请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.GetCnName(System.String,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            获取域账号的姓名
+            </summary>
+            <param name="account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.GetUserList(Centa.Monitor.ViewModel.Request.Account.User.RequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            用户列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.GetKeyIdList(Centa.Monitor.ViewModel.Request.Account.User.UserKeyIDRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            编辑用户
+            </summary>       
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.EditUser(Centa.Monitor.ViewModel.Request.Account.User.UserUptRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            编辑保存用户
+            </summary>
+            <param name="query">@Order=3,编辑用户请求实体</param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.DeleteUser(Centa.Monitor.ViewModel.Request.Account.User.UserDeleteRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            根据KeyId删除用户信息
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Controllers.SystemManagement.UserController.ResetPassword(Centa.Monitor.ViewModel.Response.Account.User.ResetPasswordsResponseViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.PortalMicroAgentCompany.Controllers.ImportAgencyCompany.ImportController.GetList(Centa.Monitor.ViewModel.Request.ImportAgency.HistoryAgencyRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入历史列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.PortalMicroAgentCompany.Controllers.ImportAgencyCompany.ImportController.ImportAgencyExcel(Centa.Monitor.ViewModel.Request.ImportAgency.RequestModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            导入发票
+            </summary>
+            <param name="requestViewModel"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Centa.Monitor.WebAPI.Portal.Controllers.SystemManagement.SystemController">
+            <summary>
+            系统Controller
+            </summary>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Portal.Controllers.SystemManagement.SystemController.GetManagementLogsPaged(Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            结算管理日志列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Portal.Controllers.SystemManagement.SystemController.GetSystemLogsPaged(Centa.Monitor.ViewModel.Request.System.LogPagedRequestViewModel,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            系统日志列表
+            </summary>
+            <param name="query"></param>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Helpers.ExtendHelper.MapRequestDto``1(System.Object,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            Map Request Dto
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj">原对象</param>
+            <param name="tokenModel">token</param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Helpers.ExtendHelper.MapListRequestDto``1(System.Object,Centa.Monitor.WebApi.ModelBinder.TokenModel)">
+            <summary>
+            Map List Request Dto
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj">原对象</param>
+            <param name="tokenModel">tokenModel</param>
+            <returns></returns>
+        </member>
+        <member name="M:Centa.Monitor.WebAPI.Helpers.WebApiResultMiddleware.OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext)">
+            <summary>
+            返回统一的格式
+            </summary>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>
